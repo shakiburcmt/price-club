@@ -1,8 +1,8 @@
 import './App.css';
-import AssignmentMarks from './components/AssignmentMarks/AssignmentMarks';
 import NavBar from './components/NavBar/NavBar';
 import PhoneBar from './components/PhoneBar/PhoneBar';
 import Pricing from './components/Pricing/Pricing';
+import SalesReport from './components/SalesReport/SalesReport';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         Mariam Shop
       </h1>
       <Pricing></Pricing>
-      <AssignmentMarks></AssignmentMarks>
+      <SalesReport></SalesReport>
       <PhoneBar></PhoneBar>
     </div>
   );

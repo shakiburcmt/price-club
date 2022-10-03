@@ -1,7 +1,7 @@
 import React from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-const AssignmentMarks = () => {
+const SalesReport = () => {
     const data = [
         {
             name: "Page A",
@@ -26,7 +26,7 @@ const AssignmentMarks = () => {
         <div>
             <h1 className='text-2xl font-bold m-2'>Sales Report with BarChart</h1>
             <div className='flex justify-center'>
-                <BarChart width={500} height={500} data={data}>
+                <BarChart width={300} height={200} data={data}>
                     <Bar dataKey="profit" fill="#8884d8" />
                     <XAxis dataKey="profit" />
                     <YAxis />
@@ -37,4 +37,4 @@ const AssignmentMarks = () => {
     );
 };
 
-export default AssignmentMarks;
+export default SalesReport;

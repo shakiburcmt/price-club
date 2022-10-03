@@ -17,7 +17,7 @@ const PhoneBar = () => {
                     }
                     return singlePhone;
                 })
-                console.log(phoneData);
+                // console.log(phoneData);
                 setPhones(phoneData);
             });
     }, [])
@@ -25,7 +25,7 @@ const PhoneBar = () => {
         <div>
             <h1 className='text-2xl font-bold m-2'>iPhone's Price</h1>
             <div className='flex justify-center'>
-                <LineChart width={500} height={500} data={phones}>
+                <LineChart width={300} height={200} data={phones}>
                     <Line type="monotone" dataKey="price" stroke="#8884d8" strokeWidth={2} />
                     <XAxis dataKey="price" />
                     <YAxis />
@@ -36,4 +36,4 @@ const PhoneBar = () => {
     );
 };
 
-export default PhoneBar;
+export default PhoneBar; 
